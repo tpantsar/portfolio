@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Tomi Pantsar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+    <!-- Custom fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://kit.fontawesome.com/34282700cb.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <a href="index.html" class="btn finnish-flag" target="_self"></a>
+        <a href="english.html" class="btn english-flag" target="_self"></a>
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Etusivu</a></li>
+          <li class="nav__item"><a href="#services" class="nav__link">Osaaminen</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">Tietoa minusta</a></li>
+          <li class="nav__item"><a href="#work" class="nav__link">Projektit</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        <strong>Tomi Pantsar</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">Tietotekniikan 2. vuoden opiskelija</p>
+      <img src="img/profile.jpg" alt="A picture of me" class="intro__img">
+    </section>
+
+    <!-- My services -->
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">Osaaminen</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Python</h3>
+          <img src="img/python.jpg" alt="Python">
+        </div> <!-- service -->
+
+        <div class="service">
+          <h3>HTML / CSS / JavaScript</h3>
+          <img src="img/html.jpg" alt="HTML">
+          <img src="img/css.jpg" alt="CSS">
+          <img src="img/javascript.jpg" alt="Javascript">
+        </div> <!-- service -->
+
+        <div class="service">
+          <h3>C</h3>
+          <img src="img/c.jpg" alt="C">
+        </div> <!-- service -->
+
+        <div class="service">
+          <h3>Java</h3>
+          <img src="img/java.jpg" alt="Java">
+        </div> <!-- service -->
+
+        <div class="service">
+          <h3>Git</h3>
+          <img src="img/git.jpg" alt="Git">
+        </div> <!-- service -->
+      </div> <!-- services-->
+
+      <a href="#work" class="btn project-btn">Projektit</a>
+    </section>
+
+    <!-- About me -->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">Tietoa minusta</h2>
+      <p class="section__subtitle section__subtitle--about">Tietotekniikan 2. vuoden opiskelija @ Oulun yliopisto</p>
+
+      <div class="about-me__body">
+        <p>Hei! Olen 22-vuotias toisen vuoden tietotekniikan opiskelija Oulun yliopistossa.
+          Etsin kesätöitä ohjelmistokehitykseen / koodaukseen / tietotekniikkaan liittyvissä projekteissa.
+          Opinnoissani olen saanut perustaidot ohjelmoinnista Python, C- ja Java-kielillä.
+          Lisäksi olen tutustunut ohjelmistokehitykseen yleisesti ja suorittanut valinnaisia ohjelmointikursseja.</p>
+        <p>Vahvuuteeni työntekijänä kuuluu erityisesti englannin kielen taito ja asiakaspalveluosaaminen.
+          Olen lisäksi innokas oppimaan uutta ja kehittämään itseäni alallani.
+          Minulla on tapana tehdä työni huolellisesti.</p>
+          <p>Minulla on työkokemusta kevytyrittäjänä toimimisesta n. kahden vuoden ajan (Pantsarin Pihapuupalvelut).
+            Kaadoin pihapuita yksityisten ja taloyhtiöiden pihoilta käyttäen esim. nosturia apuna.
+            Sain paljon positiivista palautetta asiakkaiden kanssa toimimisesta.</p>
+      </div>
+
+      <img src="img/logo.jpg" alt="University of Oulu" class="about-me__img">
+    </section>
+
+    <!-- My Projects -->
+    <section class="my-work" id="work">
+      <h2 class="section__title section__title--work">Projektit</h2>
+      <p class="section__subtitle section__subtitle--work">Vapaa-ajalla sekä opinnoissa tekemiäni projekteja.<br>Tämä portfolio on tehty HTML / CSS / JavaScript.</p>
+
+      <div class="portfolio">
+        <!-- Portfolio item 01 -->
+        <a class="portfolio__item" href="https://github.com/tpantsar/miinaharava" target="_blank">
+          <img src="img/portfolio-01.jpg" alt="" class="portfolio__img">
+          <figcaption>Miinaharava (Python)</figcaption> 
+        </a>
+
+        <!-- Portfolio item 02 -->
+        <a class="portfolio__item" href="https://github.com/tpantsar/sudoku-solver" target="_blank">
+          <img src="img/portfolio-02.jpg" alt="" class="portfolio__img">
+          <figcaption>Sudokun ratkaisuohjelma (Python)</figcaption>
+        </a>
+
+        <!-- Portfolio item 03 -->
+        <a class="portfolio__item" href="https://github.com/tpantsar/ATMsimulator" target="_blank">
+          <img src="img/portfolio-03.jpg" alt="" class="portfolio__img">
+          <figcaption>Pankkiautomaatti (C)</figcaption>
+        </a>
+
+        <!-- Portfolio item 04 -->
+        <a class="portfolio__item" href="https://github.com/tpantsar/hangman" target="_blank">
+          <img src="img/portfolio-04.jpg" alt="" class="portfolio__img">
+          <figcaption>Hirsipuu-peli (Java)</figcaption>
+        </a>
+
+        <!-- Portfolio item 05 -->
+        <a class="portfolio__item" href="https://pantsarin-pihapuupalvelut.webnode.fi/" target="_blank">
+          <img src="img/portfolio-05.jpg" alt="" class="portfolio__img">
+          <figcaption>Yrityksen kotisivut (Webnode)</figcaption>
+        </a>
+
+        <!-- Portfolio item 06 -->
+        <a class="portfolio__item" href="https://saunarannan-hiushuone9.webnode.fi/" target="_blank">
+          <img src="img/portfolio-06.jpg" alt="" class="portfolio__img">
+          <figcaption>Yrityksen kotisivut (Webnode)</figcaption>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <h2 class="section__title section__title--contact">Ota yhteyttä</h2>
+      <i class="fa-solid fa-envelope social-list__link"></i>
+      <a href="mailto:tomi.pantsar@gmail.com" class="footer__link">tomi.pantsar@gmail.com</a>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://linkedin.com/in/tomi-pantsar" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com/tpantsar?tab=repositories" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="js/index.js"></script>
+
+  </body>
+</html>

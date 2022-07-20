@@ -84,12 +84,12 @@ strong {
 }
 
 .english-flag {
-  background-image: url("/img/english.svg");
+  background-image: url("../img/english.svg");
   background-position: center;
 }
 
 .finnish-flag {
-  background-image: url("/img/finnish.svg");
+  background-image: url("../img/finnish.svg");
   background-position: -5px;
 }
 
@@ -97,10 +97,10 @@ strong {
   background-size: cover;
   border: 1px solid black;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  margin-top: 4px;
-  margin-left: 4px;
+  width: 55px;
+  height: 55px;
+  margin-top: 5px;
+  margin-left: 5px;
 }
 
 .project-btn {

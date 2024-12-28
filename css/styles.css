@@ -7,8 +7,8 @@
 /* Custom Properties, update these for your own design */
 
 :root {
-  --ff-primary: 'Lora', serif;
-  --ff-secondary: 'Roboto Slab', serif;
+  --ff-primary: "Lora", serif;
+  --ff-secondary: "Roboto Slab", serif;
 
   --fw-reg: 400;
   --fw-bold: 600;
@@ -22,8 +22,8 @@
   --fs-h3: 1.25rem;
   --fs-body: 1rem;
 
-  --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25),
-    0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
+  --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
 
 @media (min-width: 800px) {
@@ -41,7 +41,6 @@
 /* html {
     scroll-behavior: smooth;
 } */
-
 
 body {
   background: var(--clr-light);
@@ -62,7 +61,7 @@ img {
 }
 
 strong {
-  font-weight: var(--fw-bold)
+  font-weight: var(--fw-bold);
 }
 
 :focus {
@@ -93,7 +92,8 @@ strong {
   background-position: -5px;
 }
 
-.english-flag, .finnish-flag {
+.english-flag,
+.finnish-flag {
   background-size: cover;
   border: 1px solid black;
   border-radius: 50%;
@@ -107,7 +107,7 @@ strong {
   background: var(--clr-accent);
   color: var(--clr-dark);
   font-size: 0.9rem;
-  padding: .5em 2.5em;
+  padding: 0.5em 2.5em;
   border-radius: 5px;
 }
 
@@ -126,20 +126,19 @@ h3 {
 }
 
 h1 {
-  font-size: var(--fs-h1)
+  font-size: var(--fs-h1);
 }
 
 h2 {
-  font-size: var(--fs-h2)
+  font-size: var(--fs-h2);
 }
 
 h3 {
-  font-size: var(--fs-h3)
+  font-size: var(--fs-h3);
 }
 
-
 .section__title {
-  margin-bottom: .25em;
+  margin-bottom: 0.25em;
 }
 
 .section__title--intro {
@@ -158,7 +157,7 @@ h3 {
 .section__subtitle--intro,
 .section__subtitle--about {
   background: var(--clr-accent);
-  padding: .25em 1em;
+  padding: 0.25em 1em;
   font-family: var(--ff-secondary);
   margin-bottom: 1em;
 }
@@ -189,7 +188,7 @@ header {
   z-index: 100;
 
   transform: translateX(100%);
-  transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+  transition: transform 250ms cubic-bezier(0.5, 0, 0.5, 1);
 }
 
 .nav__list {
@@ -215,7 +214,7 @@ header {
 }
 
 .nav-toggle {
-  padding: .5em;
+  padding: 0.5em;
   background: transparent;
   border: 0;
   cursor: pointer;
@@ -234,7 +233,7 @@ header {
 }
 
 .nav-open .hamburger {
-  transform: rotate(.625turn);
+  transform: rotate(0.625turn);
 }
 
 .nav-open .hamburger::before {
@@ -262,7 +261,7 @@ header {
 
 .hamburger::before,
 .hamburger::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   right: 0;
@@ -348,7 +347,7 @@ header {
 }
 
 .section__title--services::after {
-  content: '';
+  content: "";
   display: block;
   width: 2em;
   height: 1px;
@@ -373,15 +372,29 @@ header {
   margin: 15px 10px 0 10px;
 }
 
+.img-background {
+  background-color: var(--clr-light);
+  border-radius: 10%;
+  padding: 0.5em;
+}
+
+.width-100 {
+  width: 100px !important;
+}
+
+.width-200 {
+  width: 200px !important;
+}
+
 @media (min-width: 800px) {
   .services {
     display: flex;
-    max-width: 1000px;
+    max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .service+.service {
+  .service + .service {
     margin-left: 2em;
   }
 }
@@ -460,9 +473,7 @@ figcaption {
 }
 
 .portfolio__img {
-  transition:
-    transform 750ms cubic-bezier(.5, 0, .5, 1),
-    opacity 250ms linear;
+  transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
 }
 
 .portfolio__item:focus {
@@ -473,7 +484,7 @@ figcaption {
 .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img {
   transform: scale(1.2);
-  opacity: 0.5;      
+  opacity: 0.5;
 }
 
 /* footer */
@@ -518,7 +529,7 @@ figcaption {
 }
 
 .social-list__item {
-  margin: 0 .5em;
+  margin: 0 0.5em;
   font-size: 4rem; /* Size of the icons */
 }
 
